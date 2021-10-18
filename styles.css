@@ -386,7 +386,7 @@
 
 .main__img--card {
     margin: 10px;
-    height: 500px;
+    height:500px;
     width: 500px;
     border-radius: 8px;
     display: flex;
@@ -415,7 +415,7 @@
         grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
-        width: 100;
+        width: 100%;
         margin: 0 auto;
         height: 90%;
     }
@@ -450,13 +450,15 @@
     }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
+
     .main__img--card {
         width: 250px;
         height: 250px;
     }
 
-    .fa-users, .fa-layer-group {
+    .fa-users, 
+    .fa-layer-group {
         font-size: 4rem;
     }
 
@@ -532,4 +534,53 @@
     background: #59C173;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.services__card h2 {
+    text-align: center;
+}
+
+.services__card p {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px; 
+}
+
+
+.services__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.services__card button {
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #131313;
+    font-size: 1rem;
+}
+
+.services__card button:hover {
+    cursor: pointer;
+}
+
+.services__card:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+    .services__wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services__wrapper {
+        grid-template-columns: 1fr;
+    }
 }
