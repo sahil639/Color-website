@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;600;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Helvetica Neue", sans-serif;
+    font-family: 'Darker Grotesque', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -13,6 +15,7 @@
     justify-content: center;
     align-items: center;
     font-size:1.2rem;
+    font-weight: 800;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -42,6 +45,7 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    font-weight: bold;
 }
 
 .navbar__menu {
@@ -83,7 +87,7 @@
     width: 100%;
     border: none;
     outline: none;
-    border-radius: 8px;
+    border-radius: 12px;
     background: #833ab4;
     background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
@@ -240,7 +244,7 @@
 }
 
 .hero__description {
-    font-size:  60px;
+    font-size:  54px;
     background: #da22ff;
     background: -webkit-linear-gradient(
         to right,
@@ -308,11 +312,12 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     text-transform: uppercase;
-    margin-bottom: 32px;
+    margin-bottom: 2px;
 }
 
 .main__content h2 {
     font-size: 4rem;
+    line-height: 72px;
     background: #ff8177;
     background: -webkit-linear-gradient(
         to right,
@@ -339,17 +344,18 @@
 
 .main__btn {
     font-size:1.8rem;
+    font-weight: bold;
     background: #833ab4;
     background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     padding: 20px 60px;
-    border-radius: 8px;
+    border-radius: 12px;
     color: #fff;
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
     transition: all 0.35s;
-    outline: 2px solid #fff;
+    /* outline: 2px solid #fff; */
     box-shadow: rgba(247, 99, 0, 0.4) 0px 22px 70px 4px;
 }
 
@@ -369,7 +375,7 @@
     height: 100%;
     background: #ff1ead;
     transition: all 0.35s;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 .main__btn:hover {
@@ -388,7 +394,7 @@
     margin: 10px;
     height:500px;
     width: 500px;
-    border-radius: 8px;
+    border-radius: 18px;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -399,7 +405,7 @@
 
 .fa-layer-group, 
 .fa-users  {
-    font-size: 14rem;
+    font-size: 8rem;
 }
 
 #card-2 {
@@ -426,8 +432,9 @@
     }
 
     .main__img--card {
-        height: 425px;
-        width: 425px;
+        margin-top: 45px;
+        height: 380px;
+        width: 380px;
     }
 
     .main__container {
@@ -453,8 +460,8 @@
 @media screen and (max-width: 480px) {
 
     .main__img--card {
-        width: 250px;
-        height: 250px;
+        width: 150px;
+        height: 150px;
     }
 
     .fa-users, 
@@ -501,8 +508,8 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
-    margin-bottom: 5rem;
-    font-size: 2.5rem;
+    margin-bottom: 3.5rem;
+    font-size: 3.5rem;
 }
 
 .services__wrapper {
@@ -512,10 +519,10 @@
 }
 
 .services__card {
-    margin: 10px;
-    height: 425px;
+    margin: 20px;
+    height: 400px;
     width: 300px;
-    border-radius: 4px;
+    border-radius: 18px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -558,7 +565,7 @@
     padding: 14px 24px;
     border: none;
     outline: none;
-    border-radius: 10px;
+    border-radius: 12px;
     background: #131313;
     font-size: 1rem;
 }
@@ -568,7 +575,7 @@
 }
 
 .services__card:hover {
-    transform: scale(1.075);
+    transform: scale(1.050);
     transition: 0.3s ease-in;
     cursor: pointer;
 }
