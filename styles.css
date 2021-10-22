@@ -380,10 +380,14 @@
 
 .main__btn:hover {
     color: #fff;
+    border-radius: 12px;
+
 }
 
 .main__btn:hover::after {
     width: 100%;
+    border-radius: 12px;
+
 }
 
 .main__img--container {
@@ -538,9 +542,10 @@
 }
 
 .services__card:nth-child(3) {
-    background: #59C173;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .services__card h2 {
